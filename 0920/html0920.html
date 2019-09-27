@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>리다이렉트</title>
+	<script language='javascript'>
+		function st(){
+			alert("호출");
+			document.frm1.submit();
+		}
+	</script>
+</head>
+<body>
+	<form name='frm1' method='post' action='jsp4.jsp'>
+		ID: <input type='text' name = 'iid'>
+		<input type='button' value='start' onclick='st()'>
+	</form>
+</body>
+<html>
